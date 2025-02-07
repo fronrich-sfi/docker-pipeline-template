@@ -11,7 +11,6 @@ To install this template to an existing repo, execute the following commands fro
 ```sh
 npx degit fronrich-sfi/docker-pipeline-template#main temp
 
-
 mv temp/src/* ./
 
 rm -rf temp/
