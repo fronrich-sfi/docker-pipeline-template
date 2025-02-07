@@ -1,0 +1,14 @@
+version: 0.0
+os: linux
+files:
+  - source: scripts
+    destination: /opt/app/scripts
+    permissions:
+      - owner: root
+        group: root
+        mode: "0755"
+hooks:
+  AfterInstall:
+    - location: scripts/deploy_container.sh
+      timeout: 300
+      runas: root
